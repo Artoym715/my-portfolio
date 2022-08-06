@@ -1,5 +1,8 @@
 // Переменные 
 $nav-link-color:#BF7506;
+$header-primary-color:#BF7506;
+$cv-download-color:#211B12;
+$border-bottom-color:#BF7506;
 
 // Шрифты
 $fontIner:'Inter', sans-serif;
@@ -7,10 +10,13 @@ $fontIner:'Inter', sans-serif;
 body{
 	font-family: $fontIner;
 }
-.header{
+.container{
 	max-width: 870px;
 	width: 100%;
-	margin: 0 auto;
+	margin: auto;
+}
+.navbar{
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -30,4 +36,59 @@ body{
 		& :hover{
 		font-weight:700;
 		}
+}
+
+.header{
+	padding: 70px 0;
+	display: flex;
+	align-items: center;
+}
+.header-text{
+	margin-left: 27px;
+}
+.header-strong{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 125%;
+}
+.header-heading{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 135%;
+	/* or 32px */
+	letter-spacing: -0.02em;
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+.header-primary{
+	color:$header-primary-color;
+}
+.social-list{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.social-link{
+	display: inline-block;
+	padding: 8px;
+}
+.header-links{
+	display: flex;
+	align-items: center;
+}
+.cv-download{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 7px 8px;
+	margin-left: 55px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color:$cv-download-color;
+	border-bottom: 2px solid $border-bottom-color;
+}
+.cv-icon{
+	margin-right: 4px;
 }

@@ -10,9 +10,21 @@ $tag-background-color:#FFFFFF;
 $tag-border-color:#DD9C3C;
 $card-text-color:#211B12;
 $card-button-text-color:#211B12;
+$developer-hello-color:#211B12;
+$developer-title-color:#BF7506;
+$developer-text-color:#211B12;
+$motto-color:#DD9C3C;
+$skills-title-color:#211B12;
+$input-label-color:#83807C;
+$input-background-color:#FFFFFF;
+$input-border-color:#E0DEDC;
 
 // Шрифты
 $fontIner:'Inter', sans-serif;
+
+*{
+	box-sizing: border-box;
+}
 
 body{
 	font-family: $fontIner;
@@ -120,8 +132,7 @@ body{
 	max-width: 400px;
 	margin-bottom: 40px;
 }
-.card-image {
-}
+
 .card-title {
 	font-weight: 700;
 	font-size: 24px;
@@ -137,8 +148,7 @@ body{
 	display: flex;
 	align-items: center;
 }
-.tags-item {
-}
+
 .tag {
 	padding: 4px 8px;
 	display: inline-block;
@@ -163,6 +173,9 @@ body{
 	display: flex;
 	align-items: center;
 }
+.card-image{
+	max-width: 100%;
+}
 .card-button {
 	display: flex;
 	align-items: center;
@@ -178,5 +191,120 @@ body{
 .card-button-icon {
 	margin-right: 4px;
 }
-.card-button-text {
+
+.developer {
+	padding: 80px 0 20px;
+	display: flex;
+	align-items: center;
+}
+.container {
+}
+.developer-photo {
+	width: 360px;
+	height: 440px;
+	flex-shrink: 0;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.developer-about {
+	margin-left: 55px;
+}
+.developer-hello {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 135%;
+	letter-spacing: -0.02em;
+	color: $developer-hello-color;
+}
+.developer-title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 125%;
+	letter-spacing: -0.03em;
+	color: $developer-title-color;
+	margin-top: 4px;
+	margin-bottom: 16px;
+}
+.developer-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $developer-text-color;
+}
+.motto {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	color: $motto-color;
+	margin: 16px 0;
+}
+.developer-sine {
+	max-width: 200px;
+}
+.skills{
+	padding: 20px 0;
+}
+.skills-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 135%;
+	letter-spacing: -0.02em;
+	color: $skills-title-color;
+}
+.feedback{
+	position: relative;
+	padding: 80px 0 160px;
+}
+.input-group{
+	position: relative;
+	padding-top: 9px;
+	margin-bottom: 24px;
+}
+.input-label{
+	position: absolute;
+	top: 0;
+	left: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $input-label-color;
+	padding: 0 8px;
+	background: $input-background-color;
+}
+.input{
+	border: 3px solid $input-border-color;
+	border-radius: 4px;
+	width: 435px;
+	height: 56px;
+}
+.textarea{
+	min-height: 140px;
+}
+.form-container{
+	max-width: 435px;
+	margin: auto;
+}
+.submit-button{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 7px 8px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color:$cv-download-color;
+	border:none;
+	border-bottom: 2px solid $border-bottom-color;
+	background-color: #fff;
+	cursor: pointer;
+}
+.button-group{
+	display: flex;
+	justify-content: end;
+}
+.feedback-hand{
+	position:absolute;
+	right: 0;
+	top: 15%;
+	width: 25%;
 }

@@ -18,6 +18,7 @@ $skills-title-color:#211B12;
 $input-label-color:#83807C;
 $input-background-color:#FFFFFF;
 $input-border-color:#E0DEDC;
+$footer-text-color:#83807C;
 
 // Шрифты
 $fontIner:'Inter', sans-serif;
@@ -197,8 +198,7 @@ body{
 	display: flex;
 	align-items: center;
 }
-.container {
-}
+
 .developer-photo {
 	width: 360px;
 	height: 440px;
@@ -253,7 +253,7 @@ body{
 }
 .feedback{
 	position: relative;
-	padding: 80px 0 160px;
+	padding: 60px 0 150px;
 }
 .input-group{
 	position: relative;
@@ -306,5 +306,19 @@ body{
 	position:absolute;
 	right: 0;
 	top: 15%;
-	width: 25%;
+	width: 20%;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+	margin-top: 160px;
+}
+.footer-text{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: $footer-text-color;
 }
